@@ -1,0 +1,7 @@
+{
+  "name": "PruebaBimestral",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
