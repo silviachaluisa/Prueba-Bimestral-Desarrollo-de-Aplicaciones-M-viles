@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      FOTO DEL AUTOR
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,58 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">FOTO DEL AUTOR</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
+  
 
   
 
  
 </ion-content>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-icon name="logo-github"></ion-icon>
+      <ion-title>GitHub</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-menu-toggle>
+      <ion-icon name="git-merge-outline"></ion-icon>
+      <a href="https://github.com/silviachaluisa/Prueba-Bimestral-Desarrollo-de-Aplicaciones-M-viles.git"><ion-button>Ir a GitHub</ion-button></a>
+      
+      
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="flex flex-col justify-center items-center col-span-1">
+      <img
+        src="assets/profile/foto.jpg"
+        alt="Silvia Chaluisa"
+        class="rounded-lg border-2 border-slate-700"
+        height="100"
+        width="100"
+      >
+    
+    </div>
+    <ion-menu-toggle>
+      <ion-icon name="hand-left-outline"></ion-icon>
+      <ion-button>Click para ver el link del respositorio</ion-button>
+
+    </ion-menu-toggle>
+    
+  </ion-content>
+</div>
+
+
