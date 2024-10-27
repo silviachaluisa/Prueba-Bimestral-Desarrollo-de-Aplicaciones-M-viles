@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/file": "^5.36.0",
     "@ionic/angular": "^8.0.0",
     "@ionic/cordova-builders": "^12.1.2",
     "ionicons": "^7.0.0",
@@ -42,6 +44,7 @@
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "cordova-plugin-file": "^8.1.1",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.2.1",
@@ -55,5 +58,10 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.0"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-file": {}
+    }
+  }
 }
