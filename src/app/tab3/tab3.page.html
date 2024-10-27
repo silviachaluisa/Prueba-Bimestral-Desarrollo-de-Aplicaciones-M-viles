@@ -1,23 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      CALCULADORA CUADRÁTICA
-    </ion-title>
+    <ion-title>CALCULADORA CUADRÁTICA</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
- 
- 
-  <br><ion-button shape="round">Round</ion-button>
-  <ion-button shape="round">Round</ion-button>
-  <ion-button shape="round">Round</ion-button>
-  <ion-button shape="round">Round</ion-button>
-  
-  
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Coeficiente a</ion-label>
+    <ion-input type="number" [(ngModel)]="a"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Coeficiente b</ion-label>
+    <ion-input type="number" [(ngModel)]="b"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Coeficiente c</ion-label>
+    <ion-input type="number" [(ngModel)]="c"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="calculateRoots()">Calcular Raíces</ion-button>
+
+  <div *ngIf="roots">
+    <h2>Raíces:</h2>
+    <p *ngIf="roots === 'No hay raíces reales'">{{ roots }}</p>
+    <p *ngIf="roots !== 'No hay raíces reales'">{{ roots[0] }} y {{ roots[1] }}</p>
+  </div>
 </ion-content>
