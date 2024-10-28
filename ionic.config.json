@@ -1,7 +1,8 @@
 {
   "name": "PruebaBimestral",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

@@ -9,6 +9,10 @@
     <ion-label position="floating">Introduce tu texto</ion-label>
     <ion-input type="text" [(ngModel)]="textInput"></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-label position="floating">Introduce el nombre del archivo</ion-label>
+    <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
 
   <ion-button expand="fullscreen" (click)="saveText()">Guardar Texto</ion-button>
 
