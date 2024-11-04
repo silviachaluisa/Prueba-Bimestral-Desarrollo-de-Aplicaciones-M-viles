@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'PruebaBimestral',
+  appId: 'com.Bienvenido',
+  appName: 'BIENVENIDO',
   webDir: 'www',
 
 
@@ -10,7 +10,7 @@ const config: CapacitorConfig = {
     SplashScreen: {
       launchShowDuration: 0,
       launchAutoHide: true,
-      backgroundColor: "#FFC0CB",
+      backgroundColor: "#5304bf",
       androidSplashResourceName: "splash",
       androidScaleType: "CENTER_CROP",
       showSpinner: false,
@@ -25,17 +25,17 @@ const config: CapacitorConfig = {
   },
 
 
-  cordova: {
-    preferences: {
-      ScrollEnabled: 'false',
-      BackupWebStorage: 'none',
-      SplashMaintainAspectRatio: 'true',
-      FadeSplashScreenDuration: '300',
-      SplashShowOnlyFirstTime: 'false',
-      SplashScreen: 'screen',
-      SplashScreenDelay: '3000'
-    }
-  }
+  // cordova: {
+  //   preferences: {
+  //     ScrollEnabled: 'false',
+  //     BackupWebStorage: 'none',
+  //     SplashMaintainAspectRatio: 'true',
+  //     FadeSplashScreenDuration: '300',
+  //     SplashShowOnlyFirstTime: 'false',
+  //     SplashScreen: 'screen',
+  //     SplashScreenDelay: '3000'
+  //   }
+  // }
 };
 
 export default config;
